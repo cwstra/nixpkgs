@@ -3,7 +3,7 @@
   beamPackages,
   makeWrapper,
   rebar3,
-  elixir_1_18,
+  elixir,
   erlang,
   fetchFromGitHub,
   nixosTests,
