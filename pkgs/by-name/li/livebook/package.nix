@@ -3,7 +3,7 @@
   beamPackages,
   makeWrapper,
   rebar3,
-  elixir,
+  elixir_1_18,
   erlang,
   fetchFromGitHub,
   nixosTests,
@@ -13,7 +13,7 @@ beamPackages.mixRelease rec {
   pname = "livebook";
   version = "0.15.2";
 
-  inherit elixir;
+  elixir = elixir_1_18;
 
   buildInputs = [ erlang ];
 
