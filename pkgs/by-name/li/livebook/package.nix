@@ -13,7 +13,7 @@ beamPackages.mixRelease rec {
   pname = "livebook";
   version = "0.15.2";
 
-  elixir = elixir_1_18;
+  inherit elixir;
 
   buildInputs = [ erlang ];
 
