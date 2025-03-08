@@ -1828,8 +1828,8 @@ with pkgs;
   kavita = callPackage ../servers/web-apps/kavita { };
 
   livebook = callPackage ../by-name/li/livebook/package.nix {
-    elixir = elixir_1_18;
-    beamPackages = beamPackages.extend (self: super: { elixir = elixir_1_18; });
+    elixir = beamPackages.erlang.elixir_1_18;
+    beamPackages = beamPackages.extend (self: super: { elixir = beam.interpreters.elixir_1_18; });
   };
 
   pass = callPackage ../tools/security/pass { };
